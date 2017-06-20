@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{pagetitle}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="card card-ios">
+    <ion-row>
+      <ion-col col-sm-12 col-md-6>
+        <img src="{{album.logo}}" (error)="updateLogo(album)">
+      </ion-col>
+      <ion-col col-sm-12 col-md-6>
+        <ion-card-content class="card-content card-content-ios">
+          <ion-card-title class="card-title card-title-ios">
+            <h1>{{album.title}}</h1>
+            <hr>
+            <h2>{{album.artist}}</h2>
+          </ion-card-title>
+          <h3>Released: {{album.date}}</h3>
+          <hr>
+          <p>{{album.description}}</p>
+        </ion-card-content>
+              <hr>
+        <ion-item class="item-ios" *ngFor="let song of album.songs" (click)="launchIAB(song.url)">
+            <ion-icon item-start="" name="musical-notes" role="img" style="color: #d03e84" class="icon icon-ios ion-ios-musical-notes item-icon" aria-label="musical notes"></ion-icon>
+            {{song.title}}
+            <ion-badge item-end="" class="badge badge-ios">{{song.duration}}</ion-badge>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+</ion-content>

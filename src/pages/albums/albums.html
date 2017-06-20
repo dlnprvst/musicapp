@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{pagetitle}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let album of albums">
+      <ion-thumbnail item-start>
+        <img src="{{album.logo}}" (error)="updateLogo(album)">
+      </ion-thumbnail>
+      <div class="item-wrapper">
+          <h2>{{album.title}}</h2>
+          <p>{{album.date}}</p>
+      </div>
+      <button ion-button clear item-end (click)="goTo(album)">View</button>
+    </ion-item>
+  </ion-list>
+</ion-content>

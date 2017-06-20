@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-navbar >
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{pagetitle}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-searchbar (ionInput)="onInput($event)" placeholder="Look for artists, albums or music genres"> </ion-searchbar>
+  <div row [hidden]="items.length">
+    <div col text-center>
+      <img src="https://s-media-cache-ak0.pinimg.com/736x/54/be/ea/54beea5636b075b5b1e37612e82edad4.jpg" alt="Music app's logo" class="logo">
+    </div>
+  </div>
+
+  <div [hidden]="!items.length">
+    <ion-list>
+      <ion-list-header>Artists</ion-list-header>
+      <button ion-item *ngFor="let artist of items[0]" (click)="goToArtist(artist)">
+        <ion-avatar item-start>
+          <img src="{{artist.logo}}" (error)="updateLogo(artist, 'artist')">
+        </ion-avatar>
+        <h2>{{artist.name}}</h2>
+      </button>
+      <p ion-item [hidden]="hasResult(0)">No artists found</p>
+    </ion-list>
+
+    <ion-list>
+      <ion-list-header>Albums</ion-list-header>
+      <ion-item *ngFor="let album of items[1]">
+        <ion-thumbnail item-start>
+          <img src="{{album.logo}}" (error)="updateLogo(album, 'album')">
+        </ion-thumbnail>
+        <div class="item-wrapper">
+            <h2>{{album.title}}</h2>
+            <p>{{album.date}}</p>
+        </div>
+        <button ion-button clear item-end (click)="goToAlbum(album)">View</button>
+      </ion-item>
+      <p ion-item [hidden]="hasResult(1)">No albums found</p>
+    </ion-list>
+
+    <ion-list>
+      <ion-list-header>Genre</ion-list-header>
+      <ion-item *ngFor="let genre of items[2]" (click)="goToGenre(genre)" class="clickable">{{genre}}</ion-item>
+      <p ion-item [hidden]="hasResult(2)">No genres found</p>
+    </ion-list>
+  </div>
+</ion-content>

@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{pagetitle}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-list>
+      <button ion-item *ngFor="let genre of genres" (click)="goTo(genre)">
+        <h2>{{genre}}</h2>
+      </button>
+    </ion-list>
+</ion-content>

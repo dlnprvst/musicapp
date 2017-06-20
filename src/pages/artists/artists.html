@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{pagetitle}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <button ion-item *ngFor="let artist of artists" (click)="goTo(artist)">
+      <ion-avatar item-start>
+        <img src="{{artist.logo}}" (error)="updateLogo(artist)">
+      </ion-avatar>
+      <h2>{{artist.name}}</h2>
+    </button>
+  </ion-list>
+</ion-content>

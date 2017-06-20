@@ -1,0 +1,170 @@
+{
+	"artists": [{
+		"name": "Against Me!",
+		"description": "Against Me! is an American punk rock band formed in 1997 in Gainesville, Florida by singer and guitarist Laura Jane Grace. Since 2001, the band's lineup has also included...",
+		"albums": [
+			{
+				"title": "Reinventing Axl Rose",
+				"description": "Against Me! Is Reinventing Axl Rose is the debut album by the Gainesville, Florida punk rock band Against Me!, released on March 5, 2002 under No Idea Records.",
+				"date": "2002",
+				"logo": "https://f4.bcbits.com/img/a2133633432_5.jpg",
+				"songs": [
+					{
+						"title": "Pints of Guinness Make You Strong",
+						"duration": "2:40",
+						"url": "https://www.youtube.com/watch?v=0wkZGMktFCw"
+					},
+					{
+						"title": "The Politics of Starving",
+						"duration": "3:06",
+						"url": "https://www.youtube.com/watch?v=TURdUb-3ahE"
+					},
+					{
+						"title": "We Laugh at Danger",
+						"duration": "3:17",
+						"url": "https://www.youtube.com/watch?v=pPS3P8t2Y3c"
+					},
+					{
+						"title": "I Still Love You Julie",
+						"duration": "3:12",
+						"url": "https://www.youtube.com/watch?v=WyPcBuOwnac"
+					},
+					{
+						"title": "Scream It Until You're Coughing up Blood",
+						"duration": "2:29",
+						"url": "https://www.youtube.com/watch?v=Rg4gR8jdxos"
+					},
+					{
+						"title": "Jordan's 1st Choice",
+						"duration": "2:08",
+						"url": "https://www.youtube.com/watch?v=WG_KpO3nLKQ"
+					},
+					{
+						"title": "Those Anarcho Punks Are Mysterious...",
+						"duration": "3:06",
+						"url": "https://www.youtube.com/watch?v=h_BTTozIPaQ"
+					},
+					{
+						"title": "Reinventing Axl Rose",
+						"duration": "2:25",
+						"url": "https://www.youtube.com/watch?v=Poufa4QodWE"
+					},
+					{
+						"title": "Baby, I'm an Anarchist!",
+						"duration": "2:40",
+						"url": "https://www.youtube.com/watch?v=CVldfXHFlCU"
+					},
+					{
+						"title": "Walking Is Still Honest",
+						"duration": "2:37",
+						"url": "https://www.youtube.com/watch?v=-atPgNwFP10"
+					},
+					{
+						"title": "8 Full Hours of Sleep",
+						"duration": "4:00",
+						"url": "https://www.youtube.com/watch?v=41R6FasHGXM"
+					}
+				]
+			},
+			{
+				"title": "Searching for a former clarity",
+				"description": "Searching for a Former Clarity is the third album by the Gainesville, Florida punk rock band Against Me!, produced by J. Robbins and released on September 6, 2005 by Fat Wreck Chords.",
+				"date": "2005",
+				"logo": "https://upload.wikimedia.org/wikipedia/en/thumb/5/5a/Against_Me%21_-_Searching_for_a_Former_Clarity_cover.jpg/220px-Against_Me%21_-_Searching_for_a_Former_Clarity_cover.jpg",
+				"songs": [
+					{
+						"title": "Miami",
+						"duration": "4:00",
+						"url": ""
+					},
+					{
+						"title": "Mediocrity Gets You Pears (The Shaker)",
+						"duration": "2:38",
+						"url": ""
+					},
+					{
+						"title": "Justin",
+						"duration": "3:57",
+						"url": ""
+					},
+					{
+						"title": "Unprotected Sex with Multiple Partners",
+						"duration": "4:08",
+						"url": ""
+					},
+					{
+						"title": "From Her Lips to God's Ears (The Energizer)",
+						"duration": "2:35",
+						"url": ""
+					},
+					{
+						"title": "Violence",
+						"duration": "5:34",
+						"url": ""
+					},
+					{
+						"title": "Pretty Girls (The Mover)",
+						"duration": "2:45",
+						"url": ""
+					},
+					{
+						"title": "How Low",
+						"duration": "4:27",
+						"url": ""
+					},
+					{
+						"title": "Joy",
+						"duration": "2:12",
+						"url": ""
+					},
+					{
+						"title": "Holy Shit!",
+						"duration": "2:53",
+						"url": ""
+					},
+					{
+						"title": "Even at Our Worst We're Still Better Than Most (The Roller)",
+						"duration": "2:53",
+						"url": ""
+					},
+					{
+						"title": "Problems",
+						"duration": "2:40",
+						"url": ""
+					},
+					{
+						"title": "Don't Lose Touch",
+						"duration": "2:55",
+						"url": ""
+					},
+					{
+						"title": "Searching for a Former Clarity",
+						"duration": "3:25",
+						"url": ""
+					}
+				]
+			}
+		],
+		"logo": "https://a2-images.myspacecdn.com/images04/7/3737b51c1fb542669214586d00806de1/300x300.jpg",
+		"genre": "Folk-Punk"
+	},{
+		"name": "Guns N' Roses",
+		"description": "Guns N' Roses is an American hard rock band from Los Angeles formed in 1985. The classic lineup, as signed to Geffen Records in 1986, consisted of vocalist Axl Rose, lead guitarist Slash, rhythm guitarist...",
+		"albums": [],
+		"logo": "http://cdn.gunsnroses.com/site/chamber-logo.png",
+		"genre": "Hard Rock"
+	},{
+		"name": "Woody Guthrie",
+		"description": "Woodrow Wilson Guthrie was an American singer-songwriter and musician whose musical legacy includes hundreds of political, traditional, and children's songs, along with ballads and improvised works.",
+		"albums": [{
+			"title": "Dust Bowl Ballads",
+			"description": "Dust Bowl Ballads is an album by Woody Guthrie, recorded for Victor Records in Camden, New Jersey during Guthrie's time in New York City in 1940. It was Guthrie's first commercial recording and the most successful album he made. It is considered to be the first or one of the very first concept albums.",
+			"date": "1940",
+			"logo": "",
+			"songs" : []
+		}],
+		"logo": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Woody_Guthrie_NYWTS.jpg",
+		"genre": "Folk"
+	}],
+	"hasSeenIntro": "false"
+}
