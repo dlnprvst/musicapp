@@ -15,7 +15,14 @@ $ sudo npm install -g ionic cordova
 $ ionic start appName
 ```
 
-You will now need to download the repo source `src`, where the app source code is. It will replace the current `src` folder contained in your app folder. Then, to run it, cd into `appName` and run:
+You will now need to download the repo source `src`, where the app source code is. It will replace the current `src` folder contained in your app folder.
+Last step, is adding a plugin, as you can run the app on iOS and Android, the plugin helps keeping a feature working for non-desktop devices:
+```bash
+$ ionic cordova plugin add cordova-plugin-inappbrowser
+$ npm install --save @ionic-native/in-app-browser
+```
+
+Then, to run it, cd into `appName` and run:
 
 ```bash
 $ ionic serve
