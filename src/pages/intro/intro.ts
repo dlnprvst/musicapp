@@ -24,7 +24,9 @@ export class IntroPage{
       if(! this.dbProvider.isLoaded()){
         this.subscription = messageService.subscribe('receiver', (payload) => {
           this.messages.push(payload);
+          console.log(this.dbProvider.getSeenIntro());
           if(this.dbProvider.getSeenIntro()){
+            console.log('in',this.dbProvider.getSeenIntro())
             this.goTo();
           }
         });
@@ -32,7 +34,7 @@ export class IntroPage{
     }
 
     goTo(){
-      this.dbProvider.setSeenIntro("true");
+      this.dbProvider.setSeenIntro(true);
       this.nav.setRoot(HomePage);
       this.navCtrl.popToRoot();
     }
